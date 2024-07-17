@@ -1,0 +1,115 @@
+@import url('./commonStyles.css');
+
+/* ------------------Navigation Styles ---------------- */
+nav{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo_container{
+    width: calc(54.65%);
+    padding: 0 1.8rem 0 3.4rem;
+}
+.logo_container img{
+    width: 7.2rem;
+    aspect-ratio: 1/1;
+}
+.navigation_links {
+    padding: 3rem 3.4rem;
+    width: calc(100% - 54.65%);
+    background-color: var(--rectangle-hero);
+    font-size: 2rem;
+}
+.navigation_links a{
+    position: relative;
+}
+.navigation_links a:first-child:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    transform: translateX(-50%) translateY(0%);
+    width: 100%;
+    height: 200%;
+    padding: 1.2rem;
+    border-radius: 0 0 3rem 3rem;
+    background: linear-gradient(to right, 
+    #DFC39D 0%, 
+    #F8E4BE 24%, 
+    #DFC39D 50%, 
+    #F8E4BE 75%, 
+    #DFC39D 100%
+    );
+    opacity: 0.5;
+}
+.user_action-btns button img{
+    width: 2.4rem;
+    aspect-ratio: 1/1;
+}
+/* ------------------Navigation Styles ---------------- */
+/* ------------------Hero Section Styles ---------------- */
+.hero-container{
+    background: url('./Images/Hero-image.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+.container h1{
+    margin-top: 13.7rem;
+    margin-bottom: 8.6rem;
+    /* color: var(--background-color); */
+}
+.container .hero_subtitle{
+    color: var(--hero-text-color);
+    font-size: var(--font-size-base);
+    margin-bottom: 8.6rem;
+    max-width: 540px;
+    line-height: 195.2%;
+}
+.hero-primary{
+    margin-right: 4.9rem;
+}
+.hero_buttom-container{
+    display: flex;
+    align-items: flex-end;
+    gap: 0.2rem;
+    padding: 2.2rem;
+    font-size: 2.8rem;
+}
+.hero_buttom-container p{
+    font-family: var(--font-family-heading);
+    background: linear-gradient(220deg, 
+    #E0A872 0%, 
+    #F8E4BE 24%, 
+    #FFF3E0 50%, 
+    #E0A872 100%
+    );
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero_buttom-container .image{
+    max-width: 264px;
+    height: auto;
+}
+.hero_buttom-container button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    transform: scale(0.7);
+    transform-origin: right;
+}
+.hero_buttom-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.hero_buttom-container .svg{
+    width: 3.2rem;
+    height: auto;
+}
+
+
+/* ------------------Hero Section Styles ---------------- */
